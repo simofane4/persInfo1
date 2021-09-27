@@ -1,0 +1,79 @@
+{% load static %}
+  <aside class="main-sidebar"> 
+    <!-- sidebar -->
+
+
+
+    <div class="sidebar"> 
+
+
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="image text-center"><img src="{% static 'dist/img/img1.jpg' %}" class="img-circle" alt="User Image"> </div>
+        <div class="info">
+          <p>Alexander Pierce</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a> </div>
+      </div>
+      
+
+
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">PERSONAL</li>
+        <li class="treeview"> <a href="#"> <i class="icon-home"></i> <span>Dashboard</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="index-2.html"><i class="fa fa-angle-right"></i> Modern</a></li>
+            <li><a href="index-crm.html"><i class="fa fa-angle-right"></i> CRM</a></li>
+            <li><a href="index-analytics.html"><i class="fa fa-angle-right"></i> Analytics</a></li>
+            <li><a href="index-ecommerce.html"><i class="fa fa-angle-right"></i> Ecommerce</a></li>
+            <li><a href="index-medical.html"><i class="fa fa-angle-right"></i> Medical</a></li>
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"> <i class="icon-grid"></i> <span>Apps</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="apps-calendar.html"><i class="fa fa-angle-right"></i> Calendar</a></li>
+            <li><a href="apps-support-ticket.html"><i class="fa fa-angle-right"></i> Support Ticket</a></li>
+            <li><a href="apps-contacts.html"><i class="fa fa-angle-right"></i> Contact / Employee</a></li>
+            <li><a href="apps-contact-grid.html"><i class="fa fa-angle-right"></i> Contact  Grid</a></li>
+            <li><a href="apps-contact-details.html"><i class="fa fa-angle-right"></i> Contact Detail</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+    <!-- /.sidebar --> 
+  </aside>
+    <aside class="main-sidebar"> 
+    <!-- sidebar -->
+
+
+
+    <div class="sidebar"> 
+
+
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="image text-center"><img src="{% static 'dist/img/img1.jpg' %}" class="img-circle" alt="User Image"> </div>
+        <div class="info">
+          <p>Alexander simo</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a> </div>
+      </div>
+      
+
+
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">PERSONAL</li>
+       
+            <li><a href=" {% url 'home' %} "><i class="fa fa-angle-right"></i> Home</a></li>
+            <li><a href=" {% url 'contact' %} "><i class="fa fa-angle-right"></i> contact</a></li>
+            <li><a href=" {% url 'about' %} "><i class="fa fa-angle-right"></i> about</a></li>
+           
+        </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.sidebar --> 
+  </aside>
+  
