@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Contact
+from .forms import ContactForm
 # Create your views here.
 
 def home(request):
@@ -19,6 +20,7 @@ def about(request):
 
 
 def contact(request):
+
     contact = Contact.objects.all()
     context={
       
@@ -27,6 +29,12 @@ def contact(request):
     }
     return render(request,"contact.html",context)
 
+
+
+
 def add_contact(request):
-    context= {}
-    return render(request,'add_contact.htm',context)
+    form = ContactForm
+    context= {
+        'form': form,
+    }
+    return render(request,'add_contact.html',context)
